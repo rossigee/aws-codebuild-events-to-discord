@@ -13,10 +13,14 @@ logger.setLevel(logging.INFO)
 def parse_event(event):
     logger.info(json.dumps(event))
 
+    region = event['region']
     accountId = event['account']
     detail = event['detail']
 
+
     project_name = detail['project-name']
+    build_id = detail['build-id']
+    build_id_short = build_id.split("/")[1]
     build_status = detail['build-status']
     color = 0
     if build_status == "SUCCEEDED":
@@ -29,6 +33,8 @@ def parse_event(event):
     build_number = "N/A"
     if 'build-number' in info:
         build_number = info['build-number']
+
+    build_url = f"https://{region}.console.aws.amazon.com/codesuite/codebuild/{accountId}/projects/{project_name}/build/{build_id_short}?region={region}"
 
     embeds = [
       {
@@ -51,7 +57,7 @@ def parse_event(event):
         })
 
     return {
-      "content": f"`{project_name}` (build: {build_number})",
+      "content": f"`{project_name}` (build: [{build_number}]({build_url}))",
       "embeds": embeds
     }
 
