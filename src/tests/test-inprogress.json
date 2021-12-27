@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:ap-southeast-1:123456789012:codebuild-notifications:eca2a97c-7ccc-4a4c-a6d0-71abd98ccd83",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "1a77eb95-6159-5c7b-9220-b1d6439e0d8a",
+                "TopicArn": "arn:aws:sns:ap-southeast-1:123456789012:codebuild-notifications",
+                "Subject": null,
+                "Message": "{\"account\":\"123456789012\",\"detailType\":\"CodeBuild Build State Change\",\"region\":\"ap-southeast-1\",\"source\":\"aws.codebuild\",\"time\":\"2021-12-27T02:10:07Z\",\"notificationRuleArn\":\"arn:aws:codestar-notifications:ap-southeast-1:123456789012:notificationrule/f9a605e46c6632d6a435a0e8e7825191f85e29f4\",\"detail\":{\"build-status\":\"IN_PROGRESS\",\"project-name\":\"example-project\",\"build-id\":\"arn:aws:codebuild:ap-southeast-1:123456789012:build/example-project:b3920478-75cd-47a8-a6eb-0c1a1fc865ef\",\"additional-information\":{\"cache\":{\"type\":\"NO_CACHE\"},\"timeout-in-minutes\":60.0,\"build-complete\":false,\"initiator\":\"Admin/rossg\",\"build-start-time\":\"Dec 27, 2021 2:10:07 AM\",\"source\":{\"location\":\"https://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/mail-filters\",\"git-clone-depth\":1.0,\"type\":\"CODECOMMIT\",\"git-submodules-config\":{\"fetch-submodules\":false}},\"source-version\":\"refs/heads/master\",\"artifact\":{\"location\":\"arn:aws:s3:::codebuild-artifacts-123456789012/example-project\"},\"environment\":{\"image\":\"aws/codebuild/standard:5.0\",\"privileged-mode\":false,\"image-pull-credentials-type\":\"CODEBUILD\",\"compute-type\":\"BUILD_GENERAL1_SMALL\",\"type\":\"LINUX_CONTAINER\",\"environment-variables\":[]},\"logs\":{\"deep-link\":\"https://console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#logEvent:group=null;stream=null\"},\"queued-timeout-in-minutes\":480.0},\"current-phase\":\"SUBMITTED\",\"current-phase-context\":\"[]\",\"version\":\"1\"},\"resources\":[\"arn:aws:codebuild:ap-southeast-1:123456789012:build/example-project:b3920478-75cd-47a8-a6eb-0c1a1fc865ef\"],\"additionalAttributes\":{}}",
+                "Timestamp": "2021-12-27T02:10:15.542Z",
+                "SignatureVersion": "1",
+                "Signature": "eYZRCKvvfznxruVpsrRTkzfixx/OSPJZyQ+iLSDr0YPGLqg5J2XvkQh2qyyuOlpFEJ5XwcNZBz5Kx4HyYlduvctYV73+enCbc8ZiX6Gno1OjEOHpEmQevWIA02/A5Cqwysa9lzVY7cgt5cDyXPEXvtcViU1QCSHyaZURv20vSvZ8lb03Pb3F2wa8KznYzD24zzrRh1DFuUOE2/7ZaXqF4yZCzx28NNJtIpOfi+0yDq1TyeMpyqQ7Ykl9wH8hpgKr9Y3MJTSn5QoxM5jhBXTFCxkhIRjmYsca7CrCwc47I25uR3UMypP5N1e/bvfm4KM9H0xqRN8/sTWSD+HDk9CyaA==",
+                "SigningCertUrl": "https://sns.ap-southeast-1.amazonaws.com/SimpleNotificationService-7ff5318490ec183fbaddaa2a969abfda.pem",
+                "UnsubscribeUrl": "https://sns.ap-southeast-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:ap-southeast-1:123456789012:codebuild-notifications:eca2a97c-7ccc-4a4c-a6d0-71abd98ccd83",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}
