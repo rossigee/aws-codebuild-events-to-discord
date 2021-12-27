@@ -14,9 +14,3 @@ variable "additional_tags" {
   type        = map(string)
   default     = {}
 }
-
-variable "tracing_mode" {
-  description = "X-Ray tracing mode"
-  type        = string
-  default     = "None"
-}
