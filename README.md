@@ -43,6 +43,7 @@ A Lambda-based handler for CodeBuild events that sends notification to a Discord
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_additional_tags"></a> [additional\_tags](#input\_additional\_tags) | Additional resource tags | `map(string)` | `{}` | no |
+| <a name="input_destination_on_failure"></a> [destination\_on\_failure](#input\_destination\_on\_failure) | Destination ARN for failure notifications | `string` | n/a | yes |
 | <a name="input_discord_url"></a> [discord\_url](#input\_discord\_url) | Discord channel URL | `string` | n/a | yes |
 | <a name="input_sns_topic_name"></a> [sns\_topic\_name](#input\_sns\_topic\_name) | Name for SNS topic | `string` | `"aws-codebuild-events-to-discord"` | no |
 

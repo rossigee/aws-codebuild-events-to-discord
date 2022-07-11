@@ -95,6 +95,8 @@ module "lambda" {
 
   cloudwatch_logs_retention_in_days = 90
 
+  destination_on_failure = var.destination_on_failure
+
   publish = true
 
   tags = var.additional_tags

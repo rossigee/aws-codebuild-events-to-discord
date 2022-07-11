@@ -9,6 +9,11 @@ variable "sns_topic_name" {
   default     = "aws-codebuild-events-to-discord"
 }
 
+variable "destination_on_failure" {
+  description = "Destination ARN for failure notifications"
+  type        = string
+}
+
 variable "additional_tags" {
   description = "Additional resource tags"
   type        = map(string)
